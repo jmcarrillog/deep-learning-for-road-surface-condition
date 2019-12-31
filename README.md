@@ -32,7 +32,17 @@ are able to better ascertain RSC under poor visibility conditions.
 Deep Learning, Machine Learning, Spatial Statistics, Road Monitoring, Computer Vision.
 
 ### Remark
-We design a Deep Convolutional Neural Network model to automatically classify Road Surface Condition (RSC) and optimize its efficiency by two orders of magnitude compared to previous models.
+We design a Deep Convolutional Neural Network model to automatically classify Road Surface Condition (RSC) and optimize its efficiency by two orders of magnitude compared to previous models. This paper buils on our previous work on data integration for road monitoring, described in another [paper](https://github.com/jmcarrillog/data-integration-for-road-monitoring).
+
+### Graphical abstract
+
+* **Winter road maintenance: Current approach**
+
+<img src="/readme-images/current_approach.png" width="600" />
+
+* **Winter road maintenance: Suggested approach**
+
+<img src="/readme-images/suggested_approach.png" width="600" />
 
 ### Input data
 * 14,000 images from roadside cameras installed in 40 Road Weather Information System (RWIS) stations across Ontario. The images are labeled into three categories (Figure 1) of Road Surface Condition (RSC) according to guidelines used by the Ministry of Transportation of Ontario (MTO). To access this dataset please contact Prof. Liping Fu at the University of Waterloo [iTSS Lab](https://itsslab.com/).
@@ -93,4 +103,40 @@ Notebook | Description
 [xception_finetune_last_5perc.ipynb](/code/initial-model-comparison/xception_finetune_last_5perc.ipynb) | Xception model, finetuning only last 5% of layers
 [xception_finetune_last_15perc.ipynb](/code/initial-model-comparison/xception_finetune_last_15perc.ipynb) | Xception model, finetuning only last 15% of layers
 
+#### Reduction of channels in convolutional layers
+Notebook | Description
+--|--
+[baseline.ipynb](/code/initial-model-comparison/baseline.ipynb) | Original baseline model, equivalent to ICF 2.0
+[baseline_icf_1.9.ipynb](/code/channels-reduction/baseline_icf_1.9.ipynb) | Modified baseline, ICF 1.9
+[baseline_icf_1.8.ipynb](/code/channels-reduction/baseline_icf_1.8.ipynb) | Modified baseline, ICF 1.8
+[baseline_icf_1.7.ipynb](/code/channels-reduction/baseline_icf_1.7.ipynb) | Modified baseline, ICF 1.7
+[baseline_icf_1.6.ipynb](/code/channels-reduction/baseline_icf_1.6.ipynb) | Modified baseline, ICF 1.6
+[baseline_icf_1.5.ipynb](/code/channels-reduction/baseline_icf_1.5.ipynb) | Modified baseline, ICF 1.5
+[baseline_icf_1.4.ipynb](/code/channels-reduction/baseline_icf_1.4.ipynb) | Modified baseline, ICF 1.4
+[baseline_icf_1.3.ipynb](/code/channels-reduction/baseline_icf_1.3.ipynb) | Modified baseline, ICF 1.3
+[baseline_icf_1.2.ipynb](/code/channels-reduction/baseline_icf_1.2.ipynb) | Modified baseline, ICF 1.2
+[baseline_icf_1.1.ipynb](/code/channels-reduction/baseline_icf_1.1.ipynb) | Modified baseline, ICF 1.1
+[baseline_icf_1.0.ipynb](/code/channels-reduction/baseline_icf_1.0.ipynb) | Modified baseline, ICF 1.0
 
+#### Reduction of neurons in fully connected layers
+Notebook | Description
+--|--
+[baseline_icf_1.7.ipynb](/code/channels-reduction/baseline_icf_1.7.ipynb) | Modified baseline, ICF 1.7, 72 neurons in FC layers
+[baseline_icf_1.7_nfc_63.ipynb](/code/neurons-reduction/baseline_icf_1.7_nfc_63.ipynb) | Modified baseline, ICF 1.7, 63 neurons in FC layers
+[baseline_icf_1.7_nfc_54.ipynb](/code/neurons-reduction/baseline_icf_1.7_nfc_54.ipynb) | Modified baseline, ICF 1.7, 54 neurons in FC layers
+[baseline_icf_1.7_nfc_45.ipynb](/code/neurons-reduction/baseline_icf_1.7_nfc_45.ipynb) | Modified baseline, ICF 1.7, 45 neurons in FC layers
+[baseline_icf_1.7_nfc_36.ipynb](/code/neurons-reduction/baseline_icf_1.7_nfc_36.ipynb) | Modified baseline, ICF 1.7, 36 neurons in FC layers
+[baseline_icf_1.7_nfc_27.ipynb](/code/neurons-reduction/baseline_icf_1.7_nfc_27.ipynb) | Modified baseline, ICF 1.7, 27 neurons in FC layers
+[baseline_icf_1.7_nfc_18.ipynb](/code/neurons-reduction/baseline_icf_1.7_nfc_18.ipynb) | Modified baseline, ICF 1.7, 18 neurons in FC layers
+[baseline_icf_1.7_nfc_9.ipynb](/code/neurons-reduction/baseline_icf_1.7_nfc_9.ipynb) | Modified baseline, ICF 1.7, 9 neurons in FC layers
+
+#### Incorporating weather data
+Notebook | Description
+--|--
+[baseline_icf_1.7_nfc_36_weather.ipynb](/code/using-weather/baseline_icf_1.7_nfc_36_weather.ipynb) | Modified baseline, ICF 1.7, 36 neurons in FC layers. Plus Machine Learning models using weather data.
+
+### Acknowledgements
+
+<img src="/readme-images/university_of_waterloo_logo.jpg" width="250" />
+
+Juan Carrillo gives special thanks to Mark Crowley at the [Machine Learning Lab](https://uwaterloo.ca/scholar/mcrowley/lab), and Guangyuan Pan and Liping Fu at the [iTSS Lab](https://itsslab.com/) for their mentoring and contributions during this research project. Thanks as well to Matthew Muresan and Taimur Usman for the interesting technical discussions.
