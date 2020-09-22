@@ -1,8 +1,8 @@
-## Comparison of Deep Learning models for Determining Road Surface Condition from Roadside Camera Images and Weather Data
+## Design of Efficient Deep Learning models for Determining Road Surface Condition from Roadside Camera Images and Weather Data
 
-This repository contains the data and source code of the [TAC-ITS'19](https://tac-its.ca/conference-papers/comparison-deep-learning-models-determining-road-surface-condition-roadside-camera) paper titled *Comparison of Deep Learning models for Determining Road Surface Condition from Roadside Camera Images and Weather Data*, it also uncludes PDF documents of the paper and the slides.
+This repository contains the data and source code of the [TAC-ITS'19](https://www.tac-atc.ca/en/conference/papers/comparison-deep-learning-models-determining-road-surface-condition-roadside-camera-images-and) paper titled *Comparison of Deep Learning models for Determining Road Surface Condition from Roadside Camera Images and Weather Data*, it also uncludes PDF documents of the paper and the slides.
 
-The official proceedings are available in the [TAC-ITS'19](https://tac-its.ca/conference-papers/comparison-deep-learning-models-determining-road-surface-condition-roadside-camera) Conference website. Paper prepared for presentation
+The official proceedings are available in the [TAC-ITS'19](https://www.tac-atc.ca/en/conference/papers/comparison-deep-learning-models-determining-road-surface-condition-roadside-camera-images-and) Conference website. Paper prepared for presentation
 at the Artificial Intelligence and Machine Learning for Smart Mobility Session.
 
 Authors: *Juan Carrillo <sup>1</sup>, Mark Crowley <sup>1</sup>, Guangyuan Pan <sup>2</sup>, Liping Fu <sup>2</sup>.*
@@ -25,8 +25,10 @@ problem. The dataset we use was collected during the 2017-2018 Winter season fro
 connected to the Ontario Road Weather Information System (RWIS), it includes 14.000 labeled
 images and 70.000 weather measurements. We train and evaluate the performance of seven
 state-of-the-art models from the Computer Vision literature, including the recent DenseNet,
-NASNet, and MobileNet. Also, by integrating observations from weather variables, the models
-are able to better ascertain RSC under poor visibility conditions.
+NASNet, and MobileNet. Moreover, by following systematic ablation experiments we adapt 
+previously published Deep Learning models and reduce their number of parameters to about ~1.3% 
+compared to their original parameter count, and by integrating observations from weather 
+variables the models are able to better ascertain RSC under poor visibility conditions.
 
 ### Keywords
 Deep Learning, Machine Learning, Spatial Statistics, Road Monitoring, Computer Vision.
