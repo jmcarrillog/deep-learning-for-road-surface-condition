@@ -1,7 +1,5 @@
 ## Design of Efficient Deep Learning models for Determining Road Surface Condition from Roadside Camera Images and Weather Data
 
-This repository contains the data and source code of the [TAC-ITS'19](https://www.tac-atc.ca/en/conference/papers/comparison-deep-learning-models-determining-road-surface-condition-roadside-camera-images-and) paper titled *Comparison of Deep Learning models for Determining Road Surface Condition from Roadside Camera Images and Weather Data*, it also uncludes PDF documents of the paper and the slides.
-
 The official proceedings are available in the [TAC-ITS'19](https://www.tac-atc.ca/en/conference/papers/comparison-deep-learning-models-determining-road-surface-condition-roadside-camera-images-and) Conference website. Paper prepared for presentation
 at the Artificial Intelligence and Machine Learning for Smart Mobility Session.
 
